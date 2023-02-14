@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{45FE5137-FDEC-4418-A841-F6B828DB1460}" SchemaVersion="103">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{45FE5137-FDEC-4418-A841-F6B828DB1460}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Ambience_Mixing" ID="{1080951A-7D3A-45D8-AF51-892A12977595}">
+					<ObjectList>
+						<ObjectRef Name="DayTime" ID="{E89ED726-2871-4F35-B11A-D62EECA078E0}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
+						<ObjectRef Name="DayLoopBlend" ID="{C4E051BD-155A-40A6-A3C8-A5C714718240}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
+						<ObjectRef Name="DayUrbanSeq" ID="{12B9F0C6-CD7A-4122-B7E3-9E9D9D44F333}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
+						<ObjectRef Name="NightLoopsBlend" ID="{3977BA0B-2E67-4A83-B069-9834E6C0CC09}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
+						<ObjectRef Name="NightUrbanSeq" ID="{73BE9F9F-47D2-463E-8BB4-9E4BFABB3701}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
+						<ObjectRef Name="Weather" ID="{3281284D-12DC-4282-8AD9-4E9B09CF54A6}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
+						<ObjectRef Name="Thunder" ID="{50B7A01A-B062-4F93-9036-A7E8031173E5}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
+						<ObjectRef Name="RainBlend" ID="{6F776DE6-64AC-433D-B555-641CBA290008}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

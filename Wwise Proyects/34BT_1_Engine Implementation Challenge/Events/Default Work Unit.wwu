@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8DC53F34-85CD-4B2B-B67C-1CBE874ECAA2}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{8DC53F34-85CD-4B2B-B67C-1CBE874ECAA2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="StartEngine" ID="{849F5AB0-2BA5-4ECA-94CC-34D8632CCDE3}">
+					<ChildrenList>
+						<Action Name="" ID="{591CDBF6-7A83-49B4-A54E-4B4CDCD2B804}" ShortID="558448000">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StartEngine" ID="{D84B7DE3-1FC0-43D0-9587-A3B898A522E4}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DE87DF06-BED8-4DEE-94CE-1D63DB6B12EA}" ShortID="820996320">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="39"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RTPC_RPM" ID="{D7F95998-725F-49F5-8729-67DA0352D1A5}" WorkUnitID="{0FAA35D8-0DE9-4F4D-A899-52B3BE06D004}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DCD7A72E-9679-48F0-AEBE-1690B80AAED6}" ShortID="944590102">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="18"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineRPM" ID="{44E19535-880D-458A-8206-B462635A2D6F}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{98A91066-B816-4854-A42A-EAEB297D9FE4}" ShortID="10651274">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineRPM" ID="{44E19535-880D-458A-8206-B462635A2D6F}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FFE65CBC-60BC-4BA2-A76B-D4C07312ABF1}" ShortID="357433722">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="27"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineRPM" ID="{44E19535-880D-458A-8206-B462635A2D6F}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A148262A-8C64-4CC9-88F9-1DF60FA67986}" ShortID="391245248">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineRPM" ID="{44E19535-880D-458A-8206-B462635A2D6F}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopEngine" ID="{336324D2-0887-47DD-B519-F0490378EC39}">
+					<ChildrenList>
+						<Action Name="" ID="{76AC476C-94AC-4E05-9EEB-3D7CC8B40625}" ShortID="1027950255">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RTPC_RPM" ID="{D7F95998-725F-49F5-8729-67DA0352D1A5}" WorkUnitID="{0FAA35D8-0DE9-4F4D-A899-52B3BE06D004}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4F29B952-F2F5-4AD0-97CC-65D058B0CFAD}" ShortID="571279910">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="13"/>
+								<Property Name="FadeInCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Pitch" Type="int32" Value="-1000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineRPM" ID="{44E19535-880D-458A-8206-B462635A2D6F}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C07608B2-E0A0-40A2-8B23-6DDC2DD6A9D5}" ShortID="122384098">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-48"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineRPM" ID="{44E19535-880D-458A-8206-B462635A2D6F}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2B2401D9-5E74-45CD-BE3E-B5B308371A0A}" ShortID="132719670">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StopEngine_TurnOff" ID="{9EBCF768-336B-4239-9D5D-94F120B2716B}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C6EC67D3-CE91-4FA3-AE3B-2BD72359B361}" ShortID="258993231">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineRPM" ID="{44E19535-880D-458A-8206-B462635A2D6F}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

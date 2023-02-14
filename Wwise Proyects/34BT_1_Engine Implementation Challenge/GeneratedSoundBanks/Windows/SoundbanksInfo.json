@@ -1,0 +1,110 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "B:\\02_34BigThings_AudioTest\\03_Sesion Wwise\\34BT_1_Engine Implementation Challenge\\",
+   "SourceFilesRoot": "B:\\02_34BigThings_AudioTest\\03_Sesion Wwise\\34BT_1_Engine Implementation Challenge\\.cache\\Windows\\",
+   "SoundBanksRoot": "B:\\02_34BigThings_AudioTest\\03_Sesion Wwise\\34BT_1_Engine Implementation Challenge\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "B:\\02_34BigThings_AudioTest\\03_Sesion Wwise\\34BT_1_Engine Implementation Challenge\\GeneratedSoundBanks\\Windows"
+  },
+  "DialogueEvents": [],
+  "StreamedFiles": [],
+  "MediaFilesNotInAnyBank": [],
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "4090105378",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   },
+   {
+    "Id": "3161908922",
+    "GUID": "{939F5A41-96F1-4A57-8EDD-AE70817DF171}",
+    "Language": "SFX",
+    "Hash": "4093044405",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1087172201",
+      "Name": "StartEngine",
+      "ObjectPath": "\\Events\\Default Work Unit\\StartEngine",
+      "GUID": "{849F5AB0-2BA5-4ECA-94CC-34D8632CCDE3}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "122065117",
+        "Language": "SFX",
+        "ShortName": "EngineRPM\\CarEngineOnboard_ 1k RPM_ Loop_Edited.wav",
+        "Path": "SFX\\EngineRPM\\CarEngineOnboard_ 1k RPM_ Loop_Edited_D79FB2B7.wem"
+       },
+       {
+        "Id": "314710519",
+        "Language": "SFX",
+        "ShortName": "EngineRPM\\CarEngineOnboard_ 4k RPM_ Loop_Edited.wav",
+        "Path": "SFX\\EngineRPM\\CarEngineOnboard_ 4k RPM_ Loop_Edited_D79FB2B7.wem"
+       },
+       {
+        "Id": "354532189",
+        "Language": "SFX",
+        "ShortName": "EngineRPM\\CarEngineOnboard_ 2k RPM_ Loop_Edited.wav",
+        "Path": "SFX\\EngineRPM\\CarEngineOnboard_ 2k RPM_ Loop_Edited_D79FB2B7.wem"
+       },
+       {
+        "Id": "428642791",
+        "Language": "SFX",
+        "ShortName": "EngineRPM\\CarEngineOnboard_ 5k RPM_ Loop_Edited.wav",
+        "Path": "SFX\\EngineRPM\\CarEngineOnboard_ 5k RPM_ Loop_Edited_D79FB2B7.wem"
+       },
+       {
+        "Id": "620012070",
+        "Language": "SFX",
+        "ShortName": "EngineRPM\\CarEngineOnboard_ 3k RPM_ Loop_Edited.wav",
+        "Path": "SFX\\EngineRPM\\CarEngineOnboard_ 3k RPM_ Loop_Edited_D79FB2B7.wem"
+       },
+       {
+        "Id": "720711777",
+        "Language": "SFX",
+        "ShortName": "StartEngine.wav",
+        "Path": "SFX\\StartEngine_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3762828835",
+      "Name": "StopEngine",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopEngine",
+      "GUID": "{336324D2-0887-47DD-B519-F0490378EC39}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.046271",
+      "DurationMax": "2.046271",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "950927627",
+        "Language": "SFX",
+        "ShortName": "StopEngine_TurnOff.wav",
+        "Path": "SFX\\StopEngine_TurnOff_10C4C929.wem"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3774151474",
+      "Name": "RTPC_RPM",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_RPM",
+      "GUID": "{D7F95998-725F-49F5-8729-67DA0352D1A5}"
+     }
+    ]
+   }
+  ]
+ }
+}

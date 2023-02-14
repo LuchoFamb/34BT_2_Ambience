@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{80AA92D4-9D66-41A7-9E48-C0FC6C8CBF44}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{80AA92D4-9D66-41A7-9E48-C0FC6C8CBF44}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="EngineRPMTest" ID="{C5B38175-8B46-4E30-8EF0-A0ADB3454FAF}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="StartEngine" ID="{849F5AB0-2BA5-4ECA-94CC-34D8632CCDE3}" WorkUnitID="{8DC53F34-85CD-4B2B-B67C-1CBE874ECAA2}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StartEngine" ID="{F7326BC0-BD76-424D-A2E2-142A24287E79}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StopEngine" ID="{336324D2-0887-47DD-B519-F0490378EC39}" WorkUnitID="{8DC53F34-85CD-4B2B-B67C-1CBE874ECAA2}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StopEngine" ID="{5B2EC1F8-F5C3-4945-AD7A-0B04FC3AB855}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="EngineRPM" ID="{44E19535-880D-458A-8206-B462635A2D6F}" WorkUnitID="{2BA88C47-98E1-45E9-8505-E7F1735E34D4}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_RPM" ID="{D7F95998-725F-49F5-8729-67DA0352D1A5}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

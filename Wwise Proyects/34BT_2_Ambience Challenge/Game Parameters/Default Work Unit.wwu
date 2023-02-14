@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F7E2B8C6-0BAC-4C48-92CC-E90085AF27E0}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{F7E2B8C6-0BAC-4C48-92CC-E90085AF27E0}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_RainIntensity" ID="{26D46A86-EAF7-47E3-B92C-EAB661F5E7BA}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="7"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="7"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
