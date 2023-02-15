@@ -45,8 +45,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Day" ID="{9857314F-FF68-456D-AE5D-F6545E55ACCD}"/>
-						<CurrentStateRef Name="Rain" ID="{098D9FB2-2959-4D0F-9F1D-3A4D7E45847B}"/>
+						<CurrentStateRef Name="Night" ID="{8CF8439D-B0F0-4BB1-8EF4-DF81231E5C1B}"/>
+						<CurrentStateRef Name="NoRain" ID="{67C5056E-8481-4FD7-ADA0-029FD2BD2F73}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

@@ -24,6 +24,8 @@
 					<ChildrenList>
 						<SwitchContainer Name="Weather" ID="{3281284D-12DC-4282-8AD9-4E9B09CF54A6}" ShortID="932138475">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1004,6 +1006,8 @@
 						</SwitchContainer>
 						<RandomSequenceContainer Name="DayUrbanSeq" ID="{12B9F0C6-CD7A-4122-B7E3-9E9D9D44F333}" ShortID="1072890660">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="5"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
@@ -1061,7 +1065,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Silence_02" ID="{DC003813-F9DF-4027-84BF-EC73A5B149F0}" ShortID="858574270">
+										<Sound Name="Silence_Day" ID="{DC003813-F9DF-4027-84BF-EC73A5B149F0}" ShortID="858574270">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -1471,418 +1475,6 @@
 											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="Wwise Silence" ID="{1B03C63D-5354-4CF4-8788-A35A569BDEEB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Silence_01" ID="{BFAD6B76-7739-4CE3-9288-24B9FB353D78}" ShortID="576239405">
-											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="DayOneShot_Attenuation" ID="{9026FBCA-3A7F-459B-A777-5F88EB3A7A81}" WorkUnitID="{9230BBE8-F24E-42DD-A1CF-C6ED3E763B7B}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{8E77817C-BE67-469A-A21E-AD7B3A7A3546}" ShortID="60865924" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="5"/>
-														<Property Name="LengthMax" Type="Real32" Value="4"/>
-														<Property Name="LengthMin" Type="Real32" Value="-2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{C6CDB8AC-76D7-4F81-866F-64FC3AB4559A}">
-													<PropertyList>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-														<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="1.5"/>
-													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="SunnyBirds_Path_01" ID="{830459B0-447B-4681-84BE-6C1F706063D4}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="200"/>
-																<Property Name="Duration" Type="Uint32" Value="2000"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="10"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-88.83249</XPos>
-																	<YPos>40.39548</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-82.2335025380711</XPos>
-																	<YPos>51.4124293785311</YPos>
-																	<Flags>0</Flags>
-																	<Time>333</Time>
-																</Point>
-																<Point>
-																	<XPos>-65.989847715736</XPos>
-																	<YPos>59.8870056497175</YPos>
-																	<Flags>0</Flags>
-																	<Time>666</Time>
-																</Point>
-																<Point>
-																	<XPos>-30.9644670050761</XPos>
-																	<YPos>71.7514124293785</YPos>
-																	<Flags>0</Flags>
-																	<Time>1000</Time>
-																</Point>
-																<Point>
-																	<XPos>4.56853</XPos>
-																	<YPos>70.0565</YPos>
-																	<Flags>0</Flags>
-																	<Time>1333</Time>
-																</Point>
-																<Point>
-																	<XPos>43.65482</XPos>
-																	<YPos>56.49717</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>76.14213</XPos>
-																	<YPos>72.88136</YPos>
-																	<Flags>0</Flags>
-																	<Time>2000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="SunnyBirds_Path_02" ID="{94815F15-F713-41AF-A642-0B7CDC6A2A08}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="200"/>
-																<Property Name="Duration" Type="Uint32" Value="2000"/>
-																<Property Name="RandomX" Type="Real64" Value="5"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-88.83249</XPos>
-																	<YPos>40.39548</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-83.24873</XPos>
-																	<YPos>24.85876</YPos>
-																	<Flags>0</Flags>
-																	<Time>333</Time>
-																</Point>
-																<Point>
-																	<XPos>-69.03553</XPos>
-																	<YPos>17.51412</YPos>
-																	<Flags>0</Flags>
-																	<Time>666</Time>
-																</Point>
-																<Point>
-																	<XPos>-38.07107</XPos>
-																	<YPos>14.12429</YPos>
-																	<Flags>0</Flags>
-																	<Time>1000</Time>
-																</Point>
-																<Point>
-																	<XPos>-23.35025</XPos>
-																	<YPos>-5.64971</YPos>
-																	<Flags>0</Flags>
-																	<Time>1333</Time>
-																</Point>
-																<Point>
-																	<XPos>-11.16752</XPos>
-																	<YPos>-32.76837</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>-2.53807</XPos>
-																	<YPos>-67.7966</YPos>
-																	<Flags>0</Flags>
-																	<Time>2000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="SunnyBirds_Path_03" ID="{53992918-51AB-4214-97DC-A5330062FFAA}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="200"/>
-																<Property Name="Duration" Type="Uint32" Value="2000"/>
-																<Property Name="RandomX" Type="Real64" Value="5"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="5"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-38.07107</XPos>
-																	<YPos>-1.41243</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-23.85787</XPos>
-																	<YPos>-23.16384</YPos>
-																	<Flags>0</Flags>
-																	<Time>333</Time>
-																</Point>
-																<Point>
-																	<XPos>-9.64467</XPos>
-																	<YPos>-47.45763</YPos>
-																	<Flags>0</Flags>
-																	<Time>666</Time>
-																</Point>
-																<Point>
-																	<XPos>12.18274</XPos>
-																	<YPos>-68.92655</YPos>
-																	<Flags>0</Flags>
-																	<Time>1000</Time>
-																</Point>
-																<Point>
-																	<XPos>34.01015</XPos>
-																	<YPos>-86.44068</YPos>
-																	<Flags>0</Flags>
-																	<Time>1333</Time>
-																</Point>
-																<Point>
-																	<XPos>48.73096</XPos>
-																	<YPos>-66.1017</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>60.9137</XPos>
-																	<YPos>-43.50282</YPos>
-																	<Flags>0</Flags>
-																	<Time>2000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="SunnyBirds_Path_04" ID="{DA31876B-B391-4F49-AE68-4161875F0D81}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="200"/>
-																<Property Name="Duration" Type="Uint32" Value="2000"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="5"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>81.72589</XPos>
-																	<YPos>5.9322</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>75.1269</XPos>
-																	<YPos>-20.33898</YPos>
-																	<Flags>0</Flags>
-																	<Time>333</Time>
-																</Point>
-																<Point>
-																	<XPos>50.76142</XPos>
-																	<YPos>-38.41808</YPos>
-																	<Flags>0</Flags>
-																	<Time>666</Time>
-																</Point>
-																<Point>
-																	<XPos>33.50254</XPos>
-																	<YPos>-61.58192</YPos>
-																	<Flags>0</Flags>
-																	<Time>1000</Time>
-																</Point>
-																<Point>
-																	<XPos>25.38071</XPos>
-																	<YPos>-85.8757</YPos>
-																	<Flags>0</Flags>
-																	<Time>1333</Time>
-																</Point>
-																<Point>
-																	<XPos>2.03045</XPos>
-																	<YPos>-96.0452</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>-27.41117</XPos>
-																	<YPos>-100</YPos>
-																	<Flags>0</Flags>
-																	<Time>2000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="SunnyBirds_Path_05" ID="{A9313555-186E-43D7-B8D6-AFFC9D67E893}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="200"/>
-																<Property Name="Duration" Type="Uint32" Value="2000"/>
-																<Property Name="RandomX" Type="Real64" Value="5"/>
-																<Property Name="RandomY" Type="Real64" Value="10"/>
-																<Property Name="RandomZ" Type="Real64" Value="5"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-88.83249</XPos>
-																	<YPos>40.39548</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-69.54315</XPos>
-																	<YPos>30.50847</YPos>
-																	<Flags>0</Flags>
-																	<Time>333</Time>
-																</Point>
-																<Point>
-																	<XPos>-50.25381</XPos>
-																	<YPos>20.90395</YPos>
-																	<Flags>0</Flags>
-																	<Time>666</Time>
-																</Point>
-																<Point>
-																	<XPos>-28.4264</XPos>
-																	<YPos>29.9435</YPos>
-																	<Flags>0</Flags>
-																	<Time>1000</Time>
-																</Point>
-																<Point>
-																	<XPos>-7.61421</XPos>
-																	<YPos>43.50283</YPos>
-																	<Flags>0</Flags>
-																	<Time>1333</Time>
-																</Point>
-																<Point>
-																	<XPos>14.72081</XPos>
-																	<YPos>59.887</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>35.02538</XPos>
-																	<YPos>80.22599</YPos>
-																	<Flags>0</Flags>
-																	<Time>2000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="SunnyBirds_Path_06" ID="{11E4B15B-2C32-4DFB-9254-01936AB97C1D}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="200"/>
-																<Property Name="Duration" Type="Uint32" Value="2000"/>
-																<Property Name="RandomX" Type="Real64" Value="5"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-95.93909</XPos>
-																	<YPos>7.62712</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-83.24873</XPos>
-																	<YPos>-9.03955</YPos>
-																	<Flags>0</Flags>
-																	<Time>333</Time>
-																</Point>
-																<Point>
-																	<XPos>-67.00508</XPos>
-																	<YPos>-16.94915</YPos>
-																	<Flags>0</Flags>
-																	<Time>666</Time>
-																</Point>
-																<Point>
-																	<XPos>-38.07107</XPos>
-																	<YPos>-24.29379</YPos>
-																	<Flags>0</Flags>
-																	<Time>1000</Time>
-																</Point>
-																<Point>
-																	<XPos>-16.75127</XPos>
-																	<YPos>-29.9435</YPos>
-																	<Flags>0</Flags>
-																	<Time>1333</Time>
-																</Point>
-																<Point>
-																	<XPos>10.6599</XPos>
-																	<YPos>-36.72317</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>49.74619</XPos>
-																	<YPos>-22.59887</YPos>
-																	<Flags>0</Flags>
-																	<Time>2000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="SunnyBirds_Path_07" ID="{BF1C8E55-1CF7-423A-9A44-2FD2BD141E93}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="200"/>
-																<Property Name="Duration" Type="Uint32" Value="2000"/>
-																<Property Name="RandomX" Type="Real64" Value="5"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>95.93908</XPos>
-																	<YPos>4.23729</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>74.61929</XPos>
-																	<YPos>19.20904</YPos>
-																	<Flags>0</Flags>
-																	<Time>333</Time>
-																</Point>
-																<Point>
-																	<XPos>42.13198</XPos>
-																	<YPos>31.07345</YPos>
-																	<Flags>0</Flags>
-																	<Time>666</Time>
-																</Point>
-																<Point>
-																	<XPos>16.24365</XPos>
-																	<YPos>33.89831</YPos>
-																	<Flags>0</Flags>
-																	<Time>1000</Time>
-																</Point>
-																<Point>
-																	<XPos>-7.61421</XPos>
-																	<YPos>32.20339</YPos>
-																	<Flags>0</Flags>
-																	<Time>1333</Time>
-																</Point>
-																<Point>
-																	<XPos>-27.41117</XPos>
-																	<YPos>44.63276</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>-36.04061</XPos>
-																	<YPos>65.53673</YPos>
-																	<Flags>0</Flags>
-																	<Time>2000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{8E77817C-BE67-469A-A21E-AD7B3A7A3546}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -2454,6 +2046,8 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="NightUrbanSeq" ID="{73BE9F9F-47D2-463E-8BB4-9E4BFABB3701}" ShortID="434830387">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="5"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
@@ -2511,631 +2105,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Silence_01" ID="{77683813-D5DD-4312-B626-5A7008493798}" ShortID="624422378">
-											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="NightOneShot_Attenuation" ID="{10A548CC-5911-4E2B-9629-C52A4E563550}" WorkUnitID="{9230BBE8-F24E-42DD-A1CF-C6ED3E763B7B}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{73FBF603-B77E-408D-94C3-4C6111A900D3}" ShortID="853160410" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="6"/>
-														<Property Name="LengthMax" Type="Real32" Value="4"/>
-														<Property Name="LengthMin" Type="Real32" Value="-2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{9B72CAC7-7D86-4807-A1CF-A03FAB47D0B9}">
-													<PropertyList>
-														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="NightOwl_Path" ID="{99945782-C4ED-4AFD-A791-76A3D76E6BFC}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-10.65989</XPos>
-																	<YPos>21.18644</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-21.82741</XPos>
-																	<YPos>20.90395</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>-30.96446</XPos>
-																	<YPos>19.20905</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>-42.13198</XPos>
-																	<YPos>15.25424</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>-52.28427</XPos>
-																	<YPos>7.9096</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>-62.43655</XPos>
-																	<YPos>5.08475</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>-71.06599</XPos>
-																	<YPos>-0.56497</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_01" ID="{5A1CA7E6-4F4A-452F-8C07-A5153B48A389}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>10.15229</XPos>
-																	<YPos>13.27683</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>11.16752</XPos>
-																	<YPos>22.59887</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>13.19797</XPos>
-																	<YPos>32.20339</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>16.24366</XPos>
-																	<YPos>41.80791</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>21.82741</XPos>
-																	<YPos>53.10734</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>28.93401</XPos>
-																	<YPos>62.71187</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>36.04061</XPos>
-																	<YPos>70.62147</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_02" ID="{3C7D066A-776A-439D-99DF-2E1B25065813}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>32.48731</XPos>
-																	<YPos>65.25423</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>23.85787</XPos>
-																	<YPos>55.36724</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>22.33503</XPos>
-																	<YPos>38.41808</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>25.88833</XPos>
-																	<YPos>24.85876</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>34.01015</XPos>
-																	<YPos>25.42373</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>46.19289</XPos>
-																	<YPos>36.15819</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>53.80711</XPos>
-																	<YPos>49.15254</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_03" ID="{1FF2BE0F-366B-4ACF-A02B-CC1A00C1F685}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-15.22843</XPos>
-																	<YPos>33.61582</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-23.85787</XPos>
-																	<YPos>40.67797</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>-34.01015</XPos>
-																	<YPos>45.7627</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>-46.1929</XPos>
-																	<YPos>49.15254</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>-52.79188</XPos>
-																	<YPos>36.72317</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>-45.68528</XPos>
-																	<YPos>22.59888</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>-34.51777</XPos>
-																	<YPos>20.90395</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_04" ID="{CDD75850-5E0C-4CA0-8DFF-1E25C07154D8}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>38.07107</XPos>
-																	<YPos>-16.1017</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>36.0406</XPos>
-																	<YPos>-3.38983</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>37.56345</XPos>
-																	<YPos>10.73446</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>50.76142</XPos>
-																	<YPos>15.81921</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>60.9137</XPos>
-																	<YPos>10.16949</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>62.94416</XPos>
-																	<YPos>-4.51977</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>58.88325</XPos>
-																	<YPos>-16.38418</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_05" ID="{0AFBC3ED-3EA6-45F8-9C72-34DACD8BB48C}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-58.37563</XPos>
-																	<YPos>65.8192</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-43.14721</XPos>
-																	<YPos>62.71187</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>-29.94924</XPos>
-																	<YPos>70.0565</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>-20.81218</XPos>
-																	<YPos>76.27119</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>-10.15228</XPos>
-																	<YPos>84.18079</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>87.00564</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>8.62944</XPos>
-																	<YPos>76.27119</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_06" ID="{F48FE751-9D94-4506-B805-BF41D3BF84EA}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-50.2538</XPos>
-																	<YPos>78.24858</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-61.42132</XPos>
-																	<YPos>79.09605</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>-72.58883</XPos>
-																	<YPos>73.44633</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>-79.69543</XPos>
-																	<YPos>58.19209</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>-81.72588</XPos>
-																	<YPos>36.1582</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>-71.57361</XPos>
-																	<YPos>24.85875</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>-58.88325</XPos>
-																	<YPos>31.63842</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_07" ID="{AF7210E7-A6F5-4934-A09D-9F875D430CCF}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>61.42133</XPos>
-																	<YPos>-77.68362</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>52.79188</XPos>
-																	<YPos>-55.9322</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>40.60914</XPos>
-																	<YPos>-41.24294</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>28.93401</XPos>
-																	<YPos>-34.46328</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>21.82742</XPos>
-																	<YPos>-45.19773</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>24.36548</XPos>
-																	<YPos>-62.71187</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>34.51777</XPos>
-																	<YPos>-80.22599</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_08" ID="{5F3DE9BD-C519-4BFE-B621-534124D20CC8}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-70.55838</XPos>
-																	<YPos>-41.52543</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-79.18782</XPos>
-																	<YPos>-51.41242</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>-80.71066</XPos>
-																	<YPos>-68.36158</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>-77.15736</XPos>
-																	<YPos>-81.9209</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>-69.03554</XPos>
-																	<YPos>-81.35593</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>-56.8528</XPos>
-																	<YPos>-70.62147</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>-49.23858</XPos>
-																	<YPos>-57.62712</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_09" ID="{3DAB3891-6504-4A0B-ABDD-8838F6620365}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>14.21319</XPos>
-																	<YPos>-62.42938</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>24.87309</XPos>
-																	<YPos>-57.62711</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>37.56345</XPos>
-																	<YPos>-56.49717</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>48.73096</XPos>
-																	<YPos>-63.27683</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>56.34517</XPos>
-																	<YPos>-76.27118</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>45.17766</XPos>
-																	<YPos>-83.61582</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>28.93401</XPos>
-																	<YPos>-87.00565</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="NightOwl_Path_10" ID="{9F6D3E4F-E6CE-4000-91E3-FD700FF49821}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="500"/>
-																<Property Name="Duration" Type="Uint32" Value="3500"/>
-																<Property Name="RandomX" Type="Real64" Value="10"/>
-																<Property Name="RandomY" Type="Real64" Value="5"/>
-																<Property Name="RandomZ" Type="Real64" Value="10"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-24.8731</XPos>
-																	<YPos>-40.96045</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-14.2132</XPos>
-																	<YPos>-36.15818</YPos>
-																	<Flags>0</Flags>
-																	<Time>583</Time>
-																</Point>
-																<Point>
-																	<XPos>-1.52284</XPos>
-																	<YPos>-35.02824</YPos>
-																	<Flags>0</Flags>
-																	<Time>1166</Time>
-																</Point>
-																<Point>
-																	<XPos>9.64467</XPos>
-																	<YPos>-41.8079</YPos>
-																	<Flags>0</Flags>
-																	<Time>1750</Time>
-																</Point>
-																<Point>
-																	<XPos>17.25888</XPos>
-																	<YPos>-54.80225</YPos>
-																	<Flags>0</Flags>
-																	<Time>2333</Time>
-																</Point>
-																<Point>
-																	<XPos>6.09137</XPos>
-																	<YPos>-62.14689</YPos>
-																	<Flags>0</Flags>
-																	<Time>2916</Time>
-																</Point>
-																<Point>
-																	<XPos>-10.15228</XPos>
-																	<YPos>-65.53672</YPos>
-																	<Flags>0</Flags>
-																	<Time>3500</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{73FBF603-B77E-408D-94C3-4C6111A900D3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Silence_02" ID="{235F8292-EF1D-419E-86DB-F05DC4EA1FF2}" ShortID="994616052">
+										<Sound Name="Silence_Night" ID="{235F8292-EF1D-419E-86DB-F05DC4EA1FF2}" ShortID="994616052">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -3154,8 +2124,8 @@
 											<ChildrenList>
 												<SourcePlugin Name="Wwise Silence" ID="{4E28088C-81DA-4333-A917-8604CC88D3A2}" ShortID="682853206" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="10"/>
-														<Property Name="LengthMax" Type="Real32" Value="4"/>
+														<Property Name="Length" Type="Real32" Value="16"/>
+														<Property Name="LengthMax" Type="Real32" Value="10"/>
 														<Property Name="LengthMin" Type="Real32" Value="-2"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -3779,7 +2749,7 @@
 													<Modifier Name="" ID="{8741239A-1B7E-40A8-93DA-D61D3B43C090}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Max" Type="Real64" Value="6"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -3839,7 +2809,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>6</Value>
+														<Value>8</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -3917,7 +2887,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>6</Value>
+														<Value>8</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -4093,6 +3063,8 @@
 						<BlendContainer Name="DayLoopBlend" ID="{C4E051BD-155A-40A6-A3C8-A5C714718240}" ShortID="43213395">
 							<PropertyList>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-9</Value>
@@ -4204,6 +3176,7 @@
 						</BlendContainer>
 						<BlendContainer Name="NightLoopsBlend" ID="{3977BA0B-2E67-4A83-B069-9834E6C0CC09}" ShortID="91858157">
 							<PropertyList>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-9</Value>
@@ -4221,12 +3194,14 @@
 							<ChildrenList>
 								<Sound Name="CityNightLoop_3" ID="{410142B9-6C50-4206-A244-A8C1776300CA}" ShortID="626632739">
 									<PropertyList>
+										<Property Name="Color" Type="int16" Value="27"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="IsStreamingEnabled" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4254,10 +3229,15 @@
 										<ActiveSource Name="CityNightLoop_3" ID="{AA2DB587-5466-4261-B606-D1BAE50EA072}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<RandomSequenceContainer Name="NightLoopSeq" ID="{A77C4BE8-9EF3-4D08-BFAF-96735F547DEF}" ShortID="564176499">
+								<RandomSequenceContainer Name="NightLoopRandom_1" ID="{AE935637-0C41-40E7-B434-40DAB9338E83}" ShortID="462216620">
 									<PropertyList>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4268,15 +3248,15 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="NightLoopRandom_1" ID="{AE935637-0C41-40E7-B434-40DAB9338E83}" ShortID="462216620">
+										<Sound Name="CityNightLoop_1" ID="{A1791852-3890-4657-8DA1-E6E87255303B}" ShortID="54444767">
 											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
+												<Property Name="Color" Type="int16" Value="9"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -4287,80 +3267,59 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="CityNightLoop_1" ID="{A1791852-3890-4657-8DA1-E6E87255303B}" ShortID="54444767">
+												<AudioFileSource Name="CityNightLoop_1" ID="{86F0939D-0E53-446A-BA6C-2AF2E7736C73}">
 													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="IsStreamingEnabled" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.001"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.001"/>
+														<Property Name="LoopBegin" Type="Real64" Value="3.63920971820809"/>
+														<Property Name="LoopEnd" Type="Real64" Value="44.1998562138728"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="CityNightLoop_1" ID="{86F0939D-0E53-446A-BA6C-2AF2E7736C73}">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.001"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.001"/>
-																<Property Name="LoopBegin" Type="Real64" Value="3.63920971820809"/>
-																<Property Name="LoopEnd" Type="Real64" Value="44.1998562138728"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>NightLoops\CityNightLoop_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="178522797"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="CityNightLoop_1" ID="{86F0939D-0E53-446A-BA6C-2AF2E7736C73}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Silence" ID="{205163B3-77F2-476E-A3A2-654D4B37A6CD}" ShortID="444942218">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<SourcePlugin Name="Wwise Silence" ID="{94EDC252-3C05-4461-A343-DADFBB38654E}" ShortID="1048473979" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-															<PropertyList>
-																<Property Name="Length" Type="Real32" Value="5"/>
-																<Property Name="LengthMax" Type="Real32" Value="10"/>
-																<Property Name="LengthMin" Type="Real32" Value="-2"/>
-															</PropertyList>
-															<Language>SFX</Language>
-														</SourcePlugin>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Wwise Silence" ID="{94EDC252-3C05-4461-A343-DADFBB38654E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+													<Language>SFX</Language>
+													<AudioFile>NightLoops\CityNightLoop_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="178522797"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="NightLoopRandom_2" ID="{D50BB146-2D75-4B16-BAD3-FCBB8C6656DE}" ShortID="916169040">
+											<ActiveSourceList>
+												<ActiveSource Name="CityNightLoop_1" ID="{86F0939D-0E53-446A-BA6C-2AF2E7736C73}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence_NightLoop" ID="{205163B3-77F2-476E-A3A2-654D4B37A6CD}" ShortID="444942218">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{94EDC252-3C05-4461-A343-DADFBB38654E}" ShortID="1048473979" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="8"/>
+														<Property Name="LengthMax" Type="Real32" Value="10"/>
+														<Property Name="LengthMin" Type="Real32" Value="-2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{94EDC252-3C05-4461-A343-DADFBB38654E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CityNightLoop_2" ID="{93EDDFE7-341C-42F0-8267-880A5C824802}" ShortID="1024161769">
 											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
+												<Property Name="Color" Type="int16" Value="9"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -4371,74 +3330,25 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="CityNightLoop_2" ID="{93EDDFE7-341C-42F0-8267-880A5C824802}" ShortID="1024161769">
+												<AudioFileSource Name="CityNightLoop_2" ID="{F0E2AC1F-AE04-473D-9B7B-FB7AD5DF4CC8}">
 													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="IsStreamingEnabled" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.001"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.001"/>
 													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="CityNightLoop_2" ID="{F0E2AC1F-AE04-473D-9B7B-FB7AD5DF4CC8}">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.001"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>NightLoops\CityNightLoop_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="826862269"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="CityNightLoop_2" ID="{F0E2AC1F-AE04-473D-9B7B-FB7AD5DF4CC8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Silence" ID="{996309B8-DE71-4733-9949-68A00D2CB918}" ShortID="910980038">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<SourcePlugin Name="Wwise Silence" ID="{33F53B56-FF1B-4966-A676-534601C97852}" ShortID="204149032" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-															<PropertyList>
-																<Property Name="Length" Type="Real32" Value="5"/>
-																<Property Name="LengthMax" Type="Real32" Value="10"/>
-																<Property Name="LengthMin" Type="Real32" Value="-2"/>
-															</PropertyList>
-															<Language>SFX</Language>
-														</SourcePlugin>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Wwise Silence" ID="{33F53B56-FF1B-4966-A676-534601C97852}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+													<Language>SFX</Language>
+													<AudioFile>NightLoops\CityNightLoop_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="826862269"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
-										</RandomSequenceContainer>
+											<ActiveSourceList>
+												<ActiveSource Name="CityNightLoop_2" ID="{F0E2AC1F-AE04-473D-9B7B-FB7AD5DF4CC8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
-									<Playlist>
-										<ItemRef Name="NightLoopRandom_1" ID="{AE935637-0C41-40E7-B434-40DAB9338E83}"/>
-										<ItemRef Name="NightLoopRandom_2" ID="{D50BB146-2D75-4B16-BAD3-FCBB8C6656DE}"/>
-									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
