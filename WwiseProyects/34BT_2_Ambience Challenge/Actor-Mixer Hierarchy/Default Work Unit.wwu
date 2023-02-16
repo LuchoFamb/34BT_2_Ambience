@@ -15,7 +15,7 @@
 							<ObjectRef Name="Day" ID="{9857314F-FF68-456D-AE5D-F6545E55ACCD}" WorkUnitID="{EA4DB973-9DE8-4D3A-B923-2BF69F7D359D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+							<ObjectRef Name="Environment" ID="{366BBF8C-06CD-4B76-9E69-77A059CBCD45}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="DayTime" ID="{C0C192A0-C87A-4F1C-8B77-51522D3C4CE2}" WorkUnitID="{EA4DB973-9DE8-4D3A-B923-2BF69F7D359D}"/>
@@ -26,6 +26,7 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
@@ -36,7 +37,7 @@
 									<ObjectRef Name="NoRain" ID="{67C5056E-8481-4FD7-ADA0-029FD2BD2F73}" WorkUnitID="{EA4DB973-9DE8-4D3A-B923-2BF69F7D359D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+									<ObjectRef Name="Rain" ID="{A8D88B65-F9F5-4F2B-BADC-20607FCC3348}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Weather" ID="{9D99A7A1-3DAC-4FB7-B1D9-893C63C7BA62}" WorkUnitID="{EA4DB973-9DE8-4D3A-B923-2BF69F7D359D}"/>
@@ -1008,6 +1009,7 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
@@ -1030,14 +1032,14 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>50</XPos>
+														<XPos>70</XPos>
 														<YPos>0</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>-4</YPos>
+														<YPos>-3</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -1051,7 +1053,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+									<ObjectRef Name="OneShots" ID="{8BB6C009-7183-4435-9A0F-75F9921A4A48}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1534,9 +1536,6 @@
 										</Property>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{DD3E9D0A-45A0-41B5-B3A5-D013494FD2A8}">
@@ -2048,10 +2047,14 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{F313779D-E3EF-47C7-91CD-675F9086E6F5}" ShortID="52289723">
 											<ReferenceList>
@@ -2070,14 +2073,14 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>50</XPos>
+														<XPos>70</XPos>
 														<YPos>0</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>-4</YPos>
+														<YPos>-3</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -2091,7 +2094,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+									<ObjectRef Name="OneShots" ID="{8BB6C009-7183-4435-9A0F-75F9921A4A48}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2771,6 +2774,9 @@
 										<Sound Name="OneShotSiren_1" ID="{5975E74F-E811-4F2B-9AD5-A2CF0981B4EA}" ShortID="419085825">
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{5D2B909B-DE6B-4AA2-A822-BA6C7D9337F6}">
@@ -2849,6 +2855,9 @@
 										<Sound Name="OneShotSiren_2" ID="{5104EE58-8303-44AE-84CE-29455E87CD93}" ShortID="294710531">
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{A2720F09-DD44-4908-A212-E9370A271770}">
@@ -3065,9 +3074,10 @@
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
 								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3076,7 +3086,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+									<ObjectRef Name="Loops" ID="{8C412518-443C-4CAD-A270-A17EA5D401EA}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -3177,9 +3187,10 @@
 						<BlendContainer Name="NightLoopsBlend" ID="{3977BA0B-2E67-4A83-B069-9834E6C0CC09}" ShortID="91858157">
 							<PropertyList>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3188,7 +3199,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DA8AB21B-D6C0-4E0A-A90B-D4CB1C4D8058}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+									<ObjectRef Name="Loops" ID="{8C412518-443C-4CAD-A270-A17EA5D401EA}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

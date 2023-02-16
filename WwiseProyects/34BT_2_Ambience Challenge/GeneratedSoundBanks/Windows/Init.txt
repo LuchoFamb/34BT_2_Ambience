@@ -11,6 +11,7 @@ State	ID	Name	State Group			Notes
 	1011622525	Night	DayTime			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	262290038	RTPC_Distance			\Default Work Unit\RTPC_Distance	
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
 	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
@@ -27,7 +28,16 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	225293542	Loops			\Default Work Unit\Master Audio Bus\Environment\Loops	
+	1229948536	Environment			\Default Work Unit\Master Audio Bus\Environment	
+	2043403999	Rain			\Default Work Unit\Master Audio Bus\Environment\Rain	
+	3150299886	OneShots			\Default Work Unit\Master Audio Bus\Environment\OneShots	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1144018367	Plate_Large	Wwise RoomVerb			
+	2662085913	Large_Church1	Wwise Matrix Reverb			
+	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

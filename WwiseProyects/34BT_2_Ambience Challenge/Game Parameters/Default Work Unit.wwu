@@ -11,6 +11,12 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="7"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="RTPC_Distance" ID="{EBDE49B1-18F8-49C4-BB94-E48EDBE62FEF}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

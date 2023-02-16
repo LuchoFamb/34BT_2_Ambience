@@ -1,0 +1,45 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	317282339	Weather			\Default Work Unit\Environmental\Weather	
+	4206605382	DayTime			\Default Work Unit\Environmental\DayTime	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Weather			
+	889820894	NoRain	Weather			
+	2043403999	Rain	Weather			
+	311764537	Day	DayTime			
+	748895195	None	DayTime			
+	1011622525	Night	DayTime			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	262290038	RTPC_Distance			\Default Work Unit\RTPC_Distance	
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	225293542	Loops			\Default Work Unit\Master Audio Bus\Environment\Loops	
+	1229948536	Environment			\Default Work Unit\Master Audio Bus\Environment	
+	2043403999	Rain			\Default Work Unit\Master Audio Bus\Environment\Rain	
+	3150299886	OneShots			\Default Work Unit\Master Audio Bus\Environment\OneShots	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1144018367	Plate_Large	Wwise RoomVerb			
+	2662085913	Large_Church1	Wwise Matrix Reverb			
+	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

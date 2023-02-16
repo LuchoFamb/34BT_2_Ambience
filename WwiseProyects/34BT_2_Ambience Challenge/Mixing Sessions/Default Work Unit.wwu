@@ -50,6 +50,14 @@
 						<ObjectRef Name="Mid_RainLoop" ID="{8FABE16C-19AB-4C0B-9111-5C870FF4C82C}" WorkUnitID="{2DC1F01B-1E7D-41B6-BB41-793E96A0FEC7}"/>
 					</ObjectList>
 				</MixingSession>
+				<MixingSession Name="Mixing_Environment" ID="{49B10B3A-EFDA-4F6D-AD77-319B2D2F50E1}">
+					<ObjectList>
+						<ObjectRef Name="Environment" ID="{366BBF8C-06CD-4B76-9E69-77A059CBCD45}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+						<ObjectRef Name="Loops" ID="{8C412518-443C-4CAD-A270-A17EA5D401EA}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+						<ObjectRef Name="OneShots" ID="{8BB6C009-7183-4435-9A0F-75F9921A4A48}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+						<ObjectRef Name="Rain" ID="{A8D88B65-F9F5-4F2B-BADC-20607FCC3348}" WorkUnitID="{D18F55BB-35C1-4360-AE23-634F71D244E8}"/>
+					</ObjectList>
+				</MixingSession>
 			</ChildrenList>
 		</WorkUnit>
 	</MixingSessions>

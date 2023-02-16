@@ -5,18 +5,18 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "140",
   "RootPaths": {
-   "ProjectRoot": "B:\\02_34BigThings_AudioTest\\03_Sesion Wwise\\34BT_2_Ambience Challenge\\",
-   "SourceFilesRoot": "B:\\02_34BigThings_AudioTest\\03_Sesion Wwise\\34BT_2_Ambience Challenge\\.cache\\Windows\\",
-   "SoundBanksRoot": "B:\\02_34BigThings_AudioTest\\03_Sesion Wwise\\34BT_2_Ambience Challenge\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "B:\\GitHub\\34BT_2_Ambience\\WwiseProyects\\34BT_2_Ambience Challenge\\",
+   "SourceFilesRoot": "B:\\GitHub\\34BT_2_Ambience\\WwiseProyects\\34BT_2_Ambience Challenge\\.cache\\Windows\\",
+   "SoundBanksRoot": "B:\\GitHub\\34BT_2_Ambience\\WwiseProyects\\34BT_2_Ambience Challenge\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "B:\\02_34BigThings_AudioTest\\03_Sesion Wwise\\34BT_2_Ambience Challenge\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "B:\\GitHub\\34BT_2_Ambience\\WwiseProyects\\34BT_2_Ambience Challenge\\GeneratedSoundBanks\\Windows"
   },
   "SoundBanks": [
    {
     "Id": "521833921",
     "GUID": "{1F1A8DC1-8DC1-1DC1-C1C1-C1C1C1C1C1C1}",
     "Language": "SFX",
-    "Hash": "2282940194",
+    "Hash": "2581126288",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_68BD329A4C86512C0F1C4E89C65EAA06",
     "ShortName": "SB_68BD329A4C86512C0F1C4E89C65EAA06",
     "Path": "SB_68BD329A4C86512C0F1C4E89C65EAA06.bnk",
@@ -38,7 +38,7 @@
         "Id": "178522797",
         "Language": "SFX",
         "ShortName": "NightLoops\\CityNightLoop_1.wav",
-        "Path": "SFX\\NightLoops\\CityNightLoop_1_60C5A583.wem"
+        "Path": "SFX\\NightLoops\\CityNightLoop_1_13812129.wem"
        },
        {
         "Id": "568548509",
@@ -50,7 +50,7 @@
         "Id": "826862269",
         "Language": "SFX",
         "ShortName": "NightLoops\\CityNightLoop_2.wav",
-        "Path": "SFX\\NightLoops\\CityNightLoop_2_AEE1C297.wem"
+        "Path": "SFX\\NightLoops\\CityNightLoop_2_13812129.wem"
        },
        {
         "Id": "928307267",
